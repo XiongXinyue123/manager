@@ -193,8 +193,15 @@ bool interactiveAddTask(TaskManager& taskManager) {
 void interactiveShell(const string& username, const string& password) {
     UserManager userManager;
     if (!userManager.login(username, password)) {
-        cerr << "❌ 登录失败!" << endl;
-        return;
+        // 登录失败，尝试注册
+        if (userManager.registerUser(username, password)) {
+            cout << "✅ 新用户 " << username << " 注册成功!" << endl;
+            // 注册成功后自动登录
+            userManager.login(username, password);
+        } else {
+            cerr << "❌ 登录失败!" << endl;
+            return;
+        }
     }
 
     TaskManager taskManager(username);
