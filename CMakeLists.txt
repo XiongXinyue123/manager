@@ -3,12 +3,23 @@ project(ScheduleManager)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+find_package(Qt5 COMPONENTS Widgets REQUIRED)
+
 set(SOURCES
-    src/main.cpp
+    src/qt_gui.cpp
 )
 
-# 生成可执行文件
-add_executable(myschedule ${SOURCES})
+set(HEADERS
+    src/qt_gui.h
+)
 
-# 只链接 pthread（多线程）
-target_link_libraries(myschedule pthread)
+# 让 Qt 的 moc 处理 qt_gui.h
+qt5_wrap_cpp(MOC_SOURCES ${HEADERS})
+
+add_executable(myschedule ${SOURCES} ${MOC_SOURCES})
+
+target_link_libraries(myschedule 
+    Qt5::Widgets 
+    pthread
+)
