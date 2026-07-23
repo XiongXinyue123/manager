@@ -81,12 +81,12 @@ clean: CMakeFiles/myschedule.dir/clean
 CMakeFiles/myschedule.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myschedule.dir/build.make CMakeFiles/myschedule.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myschedule.dir/build.make CMakeFiles/myschedule.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/code/Desktop/manager/build/CMakeFiles --progress-num=1,2 "Built target myschedule"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/code/Desktop/manager/build/CMakeFiles --progress-num=1,2,3,4 "Built target myschedule"
 .PHONY : CMakeFiles/myschedule.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/myschedule.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/code/Desktop/manager/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/code/Desktop/manager/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/myschedule.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/code/Desktop/manager/build/CMakeFiles 0
 .PHONY : CMakeFiles/myschedule.dir/rule

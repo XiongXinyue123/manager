@@ -69,31 +69,54 @@ include CMakeFiles/myschedule.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/myschedule.dir/flags.make
 
-CMakeFiles/myschedule.dir/src/main.cpp.o: CMakeFiles/myschedule.dir/flags.make
-CMakeFiles/myschedule.dir/src/main.cpp.o: ../src/main.cpp
-CMakeFiles/myschedule.dir/src/main.cpp.o: CMakeFiles/myschedule.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/code/Desktop/manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/myschedule.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myschedule.dir/src/main.cpp.o -MF CMakeFiles/myschedule.dir/src/main.cpp.o.d -o CMakeFiles/myschedule.dir/src/main.cpp.o -c /home/code/Desktop/manager/src/main.cpp
+src/moc_qt_gui.cpp: ../src/qt_gui.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/code/Desktop/manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating src/moc_qt_gui.cpp"
+	cd /home/code/Desktop/manager/build/src && /usr/lib/qt5/bin/moc @/home/code/Desktop/manager/build/src/moc_qt_gui.cpp_parameters
 
-CMakeFiles/myschedule.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myschedule.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/code/Desktop/manager/src/main.cpp > CMakeFiles/myschedule.dir/src/main.cpp.i
+CMakeFiles/myschedule.dir/src/qt_gui.cpp.o: CMakeFiles/myschedule.dir/flags.make
+CMakeFiles/myschedule.dir/src/qt_gui.cpp.o: ../src/qt_gui.cpp
+CMakeFiles/myschedule.dir/src/qt_gui.cpp.o: CMakeFiles/myschedule.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/code/Desktop/manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/myschedule.dir/src/qt_gui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myschedule.dir/src/qt_gui.cpp.o -MF CMakeFiles/myschedule.dir/src/qt_gui.cpp.o.d -o CMakeFiles/myschedule.dir/src/qt_gui.cpp.o -c /home/code/Desktop/manager/src/qt_gui.cpp
 
-CMakeFiles/myschedule.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myschedule.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/code/Desktop/manager/src/main.cpp -o CMakeFiles/myschedule.dir/src/main.cpp.s
+CMakeFiles/myschedule.dir/src/qt_gui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myschedule.dir/src/qt_gui.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/code/Desktop/manager/src/qt_gui.cpp > CMakeFiles/myschedule.dir/src/qt_gui.cpp.i
+
+CMakeFiles/myschedule.dir/src/qt_gui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myschedule.dir/src/qt_gui.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/code/Desktop/manager/src/qt_gui.cpp -o CMakeFiles/myschedule.dir/src/qt_gui.cpp.s
+
+CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.o: CMakeFiles/myschedule.dir/flags.make
+CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.o: src/moc_qt_gui.cpp
+CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.o: CMakeFiles/myschedule.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/code/Desktop/manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.o -MF CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.o.d -o CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.o -c /home/code/Desktop/manager/build/src/moc_qt_gui.cpp
+
+CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/code/Desktop/manager/build/src/moc_qt_gui.cpp > CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.i
+
+CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/code/Desktop/manager/build/src/moc_qt_gui.cpp -o CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.s
 
 # Object files for target myschedule
 myschedule_OBJECTS = \
-"CMakeFiles/myschedule.dir/src/main.cpp.o"
+"CMakeFiles/myschedule.dir/src/qt_gui.cpp.o" \
+"CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.o"
 
 # External object files for target myschedule
 myschedule_EXTERNAL_OBJECTS =
 
-myschedule: CMakeFiles/myschedule.dir/src/main.cpp.o
+myschedule: CMakeFiles/myschedule.dir/src/qt_gui.cpp.o
+myschedule: CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.o
 myschedule: CMakeFiles/myschedule.dir/build.make
+myschedule: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3
+myschedule: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3
+myschedule: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
 myschedule: CMakeFiles/myschedule.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/code/Desktop/manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable myschedule"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/code/Desktop/manager/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable myschedule"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myschedule.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -104,7 +127,7 @@ CMakeFiles/myschedule.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/myschedule.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/myschedule.dir/clean
 
-CMakeFiles/myschedule.dir/depend:
+CMakeFiles/myschedule.dir/depend: src/moc_qt_gui.cpp
 	cd /home/code/Desktop/manager/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/code/Desktop/manager /home/code/Desktop/manager /home/code/Desktop/manager/build /home/code/Desktop/manager/build /home/code/Desktop/manager/build/CMakeFiles/myschedule.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/myschedule.dir/depend
 

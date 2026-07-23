@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/myschedule.dir/src/main.cpp.o -o myschedule  -lpthread 
+/usr/bin/c++ CMakeFiles/myschedule.dir/src/qt_gui.cpp.o CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.o -o myschedule  /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3 -lpthread /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3 

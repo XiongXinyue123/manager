@@ -129,29 +129,53 @@ myschedule/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myschedule.dir/build.make CMakeFiles/myschedule.dir/build
 .PHONY : myschedule/fast
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/moc_qt_gui.o: src/moc_qt_gui.cpp.o
+.PHONY : src/moc_qt_gui.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myschedule.dir/build.make CMakeFiles/myschedule.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/moc_qt_gui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myschedule.dir/build.make CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.o
+.PHONY : src/moc_qt_gui.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/moc_qt_gui.i: src/moc_qt_gui.cpp.i
+.PHONY : src/moc_qt_gui.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myschedule.dir/build.make CMakeFiles/myschedule.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/moc_qt_gui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myschedule.dir/build.make CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.i
+.PHONY : src/moc_qt_gui.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/moc_qt_gui.s: src/moc_qt_gui.cpp.s
+.PHONY : src/moc_qt_gui.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myschedule.dir/build.make CMakeFiles/myschedule.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/moc_qt_gui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myschedule.dir/build.make CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.s
+.PHONY : src/moc_qt_gui.cpp.s
+
+src/qt_gui.o: src/qt_gui.cpp.o
+.PHONY : src/qt_gui.o
+
+# target to build an object file
+src/qt_gui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myschedule.dir/build.make CMakeFiles/myschedule.dir/src/qt_gui.cpp.o
+.PHONY : src/qt_gui.cpp.o
+
+src/qt_gui.i: src/qt_gui.cpp.i
+.PHONY : src/qt_gui.i
+
+# target to preprocess a source file
+src/qt_gui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myschedule.dir/build.make CMakeFiles/myschedule.dir/src/qt_gui.cpp.i
+.PHONY : src/qt_gui.cpp.i
+
+src/qt_gui.s: src/qt_gui.cpp.s
+.PHONY : src/qt_gui.s
+
+# target to generate assembly for a file
+src/qt_gui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myschedule.dir/build.make CMakeFiles/myschedule.dir/src/qt_gui.cpp.s
+.PHONY : src/qt_gui.cpp.s
 
 # Help Target
 help:
@@ -162,9 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... myschedule"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/moc_qt_gui.o"
+	@echo "... src/moc_qt_gui.i"
+	@echo "... src/moc_qt_gui.s"
+	@echo "... src/qt_gui.o"
+	@echo "... src/qt_gui.i"
+	@echo "... src/qt_gui.s"
 .PHONY : help
 
 

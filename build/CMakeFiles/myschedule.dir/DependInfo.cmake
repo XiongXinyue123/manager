@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/code/Desktop/manager/src/main.cpp" "CMakeFiles/myschedule.dir/src/main.cpp.o" "gcc" "CMakeFiles/myschedule.dir/src/main.cpp.o.d"
+  "/home/code/Desktop/manager/build/src/moc_qt_gui.cpp" "CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.o" "gcc" "CMakeFiles/myschedule.dir/src/moc_qt_gui.cpp.o.d"
+  "/home/code/Desktop/manager/src/qt_gui.cpp" "CMakeFiles/myschedule.dir/src/qt_gui.cpp.o" "gcc" "CMakeFiles/myschedule.dir/src/qt_gui.cpp.o.d"
   )
 
 # Targets to which this target links.
