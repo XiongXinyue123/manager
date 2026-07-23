@@ -4,24 +4,19 @@
 #include <string>
 #include <sstream>
 #include <iomanip>
-#include <openssl/sha.h>
 
 class CryptoUtils {
 public:
-   
-    static std::string sha256(const std::string& input) {
-        unsigned char hash[SHA256_DIGEST_LENGTH];
-        SHA256_CTX sha256;
-        SHA256_Init(&sha256);
-        SHA256_Update(&sha256, input.c_str(), input.length());
-        SHA256_Final(hash, &sha256);
-        
-        std::stringstream ss;
-        for(int i = 0; i < SHA256_DIGEST_LENGTH; i++) {
-            ss << std::hex << std::setw(2) << std::setfill('0') << (int)hash[i];
+    static std::string hash(const std::string& input) {
+        unsigned long hash = 5381;
+        for (char c : input) {
+            hash = ((hash << 5) + hash) + c;
         }
+        std::stringstream ss;
+        ss << std::hex << std::setw(16) << std::setfill('0') << hash;
         return ss.str();
     }
 };
 
 #endif
+

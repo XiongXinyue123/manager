@@ -66,7 +66,7 @@ public:
             return false;
         }
         // 加密密码后保存
-        std::string hash = CryptoUtils::sha256(password);
+        std::string hash = CryptoUtils::hash(password);
         users[username] = hash;
         saveUsers();
         return true;
@@ -78,7 +78,7 @@ public:
         if (it == users.end()) {
             return false;  // 用户不存在
         }
-        std::string hash = CryptoUtils::sha256(password);
+        std::string hash = CryptoUtils::hash(password);
         if (it->second == hash) {
             currentUser = username;
             return true;

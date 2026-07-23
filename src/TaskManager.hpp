@@ -79,7 +79,8 @@ public:
         std::tm* dayTm = std::localtime(&day);
 
         for (const auto& task : tasks) {
-            std::tm* taskTm = std::localtime(&task.getStartTime());
+            time_t t = task.getStartTime();
+            std::tm* taskTm = std::localtime(&t);
             if (taskTm->tm_year == dayTm->tm_year &&
                 taskTm->tm_mon == dayTm->tm_mon &&
                 taskTm->tm_mday == dayTm->tm_mday) {
@@ -101,7 +102,8 @@ public:
         std::vector<Task> result;
 
         for (const auto& task : tasks) {
-            std::tm* tm = std::localtime(&task.getStartTime());
+            time_t t = task.getStartTime();
+            std::tm* tm = std::localtime(&t);
             if (tm->tm_year == year - 1900 && tm->tm_mon == month - 1) {
                 result.push_back(task);
             }
